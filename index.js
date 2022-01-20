@@ -658,7 +658,7 @@ class QueryCursor {
 		});
 	}
 	
-	stream() {
+	stream(doReturnRaw = false) {
 		const me = this;
 		
 		const reqParams = me._getReqParams();
@@ -671,6 +671,9 @@ class QueryCursor {
 			
 			return rs;
 		} else {
+			
+			if(doReturnRaw) return request.post(reqParams);	
+			
 			const streamParser = this.getStreamParser()();
 			
 			const rs = new Readable({ objectMode: true });

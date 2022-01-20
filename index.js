@@ -74,6 +74,8 @@ const FORMATS = {
 	[FORMAT_NAMES.JSON]: 'JSON',
 	[FORMAT_NAMES.TSV]: 'TabSeparatedWithNames',
 	[FORMAT_NAMES.CSV]: 'CSVWithNames',
+	"ArrowStream": "ArrowStream",
+	"Arrow": "Arrow",
 };
 
 const REVERSE_FORMATS = Object.keys(FORMATS).reduce(

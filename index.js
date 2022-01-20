@@ -76,6 +76,7 @@ const FORMATS = {
 	[FORMAT_NAMES.CSV]: 'CSVWithNames',
 	"ArrowStream": "ArrowStream",
 	"Arrow": "Arrow",
+	"RowBinary": "RowBinary",
 };
 
 const REVERSE_FORMATS = Object.keys(FORMATS).reduce(
